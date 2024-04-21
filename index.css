@@ -1,0 +1,102 @@
+body {
+  font-family: "8bitfont", Arial, sans-serif; /* Use 8-bit font, fallback to Arial if not available */
+  background-color: #272727; /* Dark background */
+  color: #272727; /* Dark font color */
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#timer {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #e8e8e8; /* Time color */
+}
+
+/* Adjust button styles as needed */
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#startBtn {
+  background-color: #20c997; /* Green */
+  color: white;
+}
+
+#pauseBtn {
+  background-color: #ff6b6b; /* Coral */
+  color: white;
+}
+
+#resumeBtn {
+  background-color: #ff9f43; /* Orange */
+  color: white;
+}
+
+#resetBtn {
+  background-color: #45aaf2; /* Sky blue */
+  color: white;
+}
+
+#lapBtn {
+  background-color: #a55eea; /* Purple */
+  color: white;
+}
+
+/* Additional styles for the table */
+table {
+  width: 60%;
+  margin: 3% auto;
+  border-collapse: collapse;
+}
+
+th {
+  border: 1px solid #333333; /* Dark border */
+  padding: 8px;
+  text-align: center;
+  font-size: large;
+  color: white; /* Header font color */
+}
+
+td {
+  border: 1px solid lightslategray; /* Dark border */
+  padding: 8px;
+  text-align: center;
+  color: #e8e8e8; /* Cell font color */
+}
+
+/* Additional information styles */
+#info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 1% auto;
+  width: 30%;
+  font-size: large;
+  color: #20c997; /* Additional info color */
+}
+
+#info p {
+  margin: 5px;
+}
+
+.title-bar {
+  background-color: #272727; /* Dark background */
+  color: #20c997; /* Blue title color */
+  padding: 10px;
+  text-align: center;
+  font-size: large;
+  box-shadow: 0 7px 10px rgba(1, 2, 5, 2); /* Box shadow */
+}
+
+.title-bar h1 {
+  margin: 0;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Time Tracker</title>
+<link rel="stylesheet" href="index.css">
+</head>
+<body style="background-color: #272727; color: #272727;">
+
+<div class="title-bar">
+  <h1>Time Tracker</h1>
+</div>
+ <br>
+<div class="container">
+  <div id="timer" style="color: #e8e8e8;">00 : 00 : 00. 000</div>
+  <button id="startBtn" onclick="startTimer()" style="background-color: #20c997;">Start</button>
+  <button id="pauseBtn" onclick="pauseTimer()" style="display: none; background-color: #ff6b6b; color: white;">Pause</button>
+  <button id="resumeBtn" onclick="resumeTimer()" style="display: none; background-color: #ff9f43; color: white;">Resume</button>
+  <button id="resetBtn" onclick="resetTimer()" style="display: none; background-color: #45aaf2; color: white;">Reset</button>
+  <button id="lapBtn" onclick="recordLap()" style="display: none; background-color: #a55eea; color: white;">Lap</button>
+</div>
+<!-- Display additional information -->
+<div id="info" style="color: #20c997;">
+  <p id="pausedCount"></p>
+  <p id="totalLaps"></p>
+</div>
+<table style="width: 60%; margin: 3% auto; border-collapse: collapse; border: 1px solid #20c997;">
+  <thead style="background-color: #20c997; color: white;">
+    <tr>
+      <th>Serial Number</th>
+      <th>Lap Timings</th>
+    </tr>
+  </thead>
+  <tbody id="lapTableBody">
+  </tbody>
+</table>
+
+<script src="index.js"></script>
+</body>
+</html>
